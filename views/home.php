@@ -52,4 +52,20 @@
 		<?php endforeach; ?>
 	</div>
 	<hr/>
+	<div class="title-allfiles"><strong>Todos os arquivos</strong></div>
+	<div class="allFiles">
+	<?php foreach($imageFiles as $image): ?>
+		<img src="assets/upload/imgs/<?php echo $image['url_img']; ?>" border="0" width="180" height="100" />
+	<?php endforeach; ?>
+	<?php foreach($videoFiles as $file): ?>						
+		<video width="180" height="100" controls>
+			<source src="assets/upload/videos/<?php echo $file['url_video']; ?>" type="video/mp4" />
+		</video>
+	<?php endforeach; ?>
+	<?php foreach($audioFiles as $auds): ?>
+		<audio controls>
+			<source src="assets/upload/audios/<?php echo $auds['url_audio']; ?>" type="audio/mpeg" />
+		</audio>
+	<?php endforeach; ?>
+	</div>
 </div>

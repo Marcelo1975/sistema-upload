@@ -114,9 +114,31 @@ class Uploads extends Model {
 		return $data;
 	}
 	
-	public function getFiles() {
+	public function getAllFilesAudios() {
 		$dados = array();
-		$sql = "SELECT * FROM up_videos ORDER BY type";
+		$sql = "SELECT * FROM audios ORDER BY id DESC";
+		$sql = $this->db->query($sql);
+
+		if($sql->rowCount() > 0) {
+			$dados = $sql->fetchAll();
+		}
+		return $dados;
+	}
+
+	public function getAllFilesImages() {
+		$dados = array();
+		$sql = "SELECT * FROM images ORDER BY id DESC";
+		$sql = $this->db->query($sql);
+
+		if($sql->rowCount() > 0) {
+			$dados = $sql->fetchAll();
+		}
+		return $dados;
+	}
+
+	public function getAllFilesVideos() {
+		$dados = array();
+		$sql = "SELECT * FROM videos ORDER BY id DESC";
 		$sql = $this->db->query($sql);
 
 		if($sql->rowCount() > 0) {

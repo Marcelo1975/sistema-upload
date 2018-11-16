@@ -22,7 +22,9 @@ class HomeController extends Controller {
 		$video->insertVideos();
 		*/
 
-		$dados['files'] = $file->getFiles();
+		$dados['audioFiles'] = $file->getAllFilesAudios();
+		$dados['imageFiles'] = $file->getAllFilesImages();
+		$dados['videoFiles'] = $file->getAllFilesVideos();
 		
 		$dados['imgs'] = $file->getImg();
 		$dados['videos'] = $file->getVideo();

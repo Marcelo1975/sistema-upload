@@ -30,6 +30,19 @@ header{
 .title{
     color: #0000ff;
 }
+.allFiles{
+    width: 100%;
+    border:1px solid #333;    
+}
+.title-allfiles{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    margin-bottom: 15px;
+    background-color: #0000ff;
+}
 footer{
     width: 100%;
     height: 60px;
