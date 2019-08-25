@@ -1,0 +1,20 @@
+{
+  "name": "sitema-upload",
+  "version": "1.0.0",
+  "description": "Sistema de upload com arquivos de variadas extensões.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marcelo1975/sitema-upload.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marcelo1975/sitema-upload/issues"
+  },
+  "homepage": "https://marcelo1975.github.io/sitema-upload/"
+}
