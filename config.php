@@ -6,7 +6,7 @@ global $db;
 
 $config = array();
 if(ENVIRONMENT == 'development') {
-	define("BASE_URL", "http://localhost/uploads/sitema-upload");
+	define("BASE_URL", "http://localhost/sistema-upload");
 	$config['dbname'] = 'upload_video';
 	$config['host'] = 'localhost';
 	$config['dbuser'] = 'root';
